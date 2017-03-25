@@ -1,0 +1,15 @@
+[user]
+	email = robert.nachlinger@gmail.com
+	name = Robert Nachlinger
+[sendemail]
+    from = Robert Nachlinger <robert.nachlinger@gmail.com>
+	smtpserver = smtp.gmail.com
+	smtpuser = robert.nachlinger@googlemail.com
+	smtpencryption = tls
+    smtppass = Ni3P5%Wp
+    chainreplyto = false
+	smtpserverport = 587
+[push]
+	default = simple
+[credential]
+	helper = cache
