@@ -117,7 +117,7 @@ alias hosts='cd /home/robert/dev/hosts && cp whitelist .. && cp myhosts .. && gi
 alias uh='yaourt -Syua --noconfirm && cd /home/robert/dev/hosts && cp whitelist .. && cp myhosts .. && git reset --hard HEAD && git pull && mv ../whitelist . && mv ../myhosts . && python3 updateHostsFile.py -a -r -b -e gambling && cd -'
 alias uhe='yaourt -Syua --noconfirm && cd /home/robert/dev/hosts && python3 updateHostsFile.py -a -r -b -e gambling && exit'
 alias blankhost='sudo mv /etc/hosts /etc/hosts.tmp && sudo cp /etc/hosts.blank /etc/hosts && read -p "Press [Enter] to revert to normal hosts file" && sudo mv /etc/hosts.tmp /etc/hosts'
-alias doc='cd ~/Doktorarbeit/Arbeit/999-Arbeit/ && vim main.tex'
+alias doc='cd ~/Doktorarbeit/Arbeit/999-Arbeit/ && tmux'
 alias spell='aspell --lang=de_DE --mode=tex check'
 alias party='cd ~/Dropbox/Meine_Daten/backup/xbmc/makePlaylist && ./makePlaylist.sh && scp PartyMode.xsp root@kodi:~/.kodi/userdata && cd -'
 alias odroid='ssh alarm@odroid'
