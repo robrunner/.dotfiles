@@ -13,3 +13,11 @@
 	default = simple
 [credential]
 	helper = cache
+[alias]
+	a = add
+	c = commit
+	s = status
+	b = branch
+	co = checkout
+	unstage = reset HEAD --
+	last = log -1 HEAD
