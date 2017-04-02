@@ -123,7 +123,6 @@ alias party='cd ~/Dropbox/Meine_Daten/backup/xbmc/makePlaylist && ./makePlaylist
 alias odroid='ssh alarm@odroid'
 alias kodi='ssh root@kodi'
 alias removeunused='sudo pacman -Rns $(pacman -Qtdq)'
-alias spot='spotify & blockify & sudo mv /etc/hosts /etc/hosts.tmp && sudo cp /etc/hosts.blank /etc/hosts && read -p "Press [Enter] to revert to normal hosts file" && sudo mv /etc/hosts.tmp /etc/hosts && kill $(pidof blockify) SIGTERM'
 
 addtobeginningfunction() {
 	for f in *.*; do mv "$f" "$1 - $f"; done
