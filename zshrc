@@ -79,3 +79,5 @@ export LIBVA_DRIVER_NAME=vdpau
 export VDPAU_DRIVER=radeonsi
 export EDITOR=vim
 export TERM=xterm-256color
+export WECHALLUSER="robrunner"
+export WECHALLTOKEN="544A9-C2792-A67F4-9B991-336A0-42B0F"
