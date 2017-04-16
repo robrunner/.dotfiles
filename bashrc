@@ -4,8 +4,6 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-PATH=$PATH:~/dev/ops-class/os161/tools/bin
-export PATH
 
 alias ls='ls --color=auto'
 alias l='ls --color=auto'
