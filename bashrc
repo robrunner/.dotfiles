@@ -59,7 +59,17 @@ convertalltox264function() {
 	for f in *.*; do ffmpeg -i "$f" -acodec copy -vcodec libx264 "$f-x264.mkv"; done
 }
 
-PS1='[\u@\h \W]\$ '
+PS1='\[\033[34m\][\u@\h \W]\$\[\033[0m\] '
+PROMPT_COMMAND=__prompt_command
+
+__prompt_command() {
+	local EXIT="$?"
+	if [ $EXIT != 0 ]; then
+		PS1='\[\033[31m\][\u@\h \W]\$\[\033[0m\] '
+	else
+		PS1='\[\033[34m\][\u@\h \W]\$\[\033[0m\] '
+	fi
+}
 
 export LIBVA_DRIVER_NAME=vdpau
 export VDPAU_DRIVER=radeonsi
